@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .score-board {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .score-board h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #333;
+        }
+        .score-board p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="score-board">
+        <p>Your  Score is :</p>
+        <h1 id="score">0</h1>
+        <p>%</p>
+    </div>
+
+    <script>
+        // Example JavaScript to update the score
+        let score = 0;
+        const scoreElement = document.getElementById('score');
+
+        function updateScore(newScore) {
+            score = newScore;
+            scoreElement.textContent = score;
+        }
+
+        // Simulate score update
+        setTimeout(() => updateScore(60), 2000); // Update score to 42 after 2 seconds
+    </script>
+</body>
+</html>

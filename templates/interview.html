@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="/static/css/Quize.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Interview Questions</h1>
+        <h1>Welcome To Interview Generator!</h1>
+    <h1>Choose an Option</h1>
+    <form method="POST" action="/generate_interview">
+      <label for="nameInput">Enter your text:</label>
+      <input type="text" id="nameInput" name="query" placeholder="Your text">
+      <br><br>
+
+      <label for="questionCount">Number of questions:</label>
+      <input type="number" id="questionCount" name="num_questions" min="1" placeholder="Number of questions">
+      <br><br>
+
+      
+      <button type="submit" name="interviewButton" id="interviewButton">Take Interview</button>
+    </form> 
+  
+    </div>
+</body>
+</html>
